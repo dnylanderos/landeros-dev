@@ -1,0 +1,2 @@
+- [WebAwesome Integration Project](project-webawesome-integration.md) — User integrating WebAwesome design system into Astro v6 personal/portfolio site; npm pkg is @awesome.me/webawesome
+- [User Role](user-role.md) — Developer building personal portfolio; comfortable with Astro v6, strict TS, pnpm; git name Daniel Landeros

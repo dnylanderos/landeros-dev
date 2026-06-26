@@ -1,25 +1,27 @@
 ---
-/* Theme */
-import '@awesome.me/webawesome/dist/styles/themes/default.css';
-/* Native styles */
-import '@awesome.me/webawesome/dist/styles/native.css';
-/* CSS utilities */
-import '@awesome.me/webawesome/dist/styles/utilities.css';
+import "@awesome.me/webawesome/dist/styles/webawesome.css";
 
-import "../styles/global.css"
+/* tailwind */
+import "../styles/global.css";
 
-import Layout from '../layouts/Layout.astro';
-import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
 
+import GithubIcon from "~icons/mdi/github";
+import LinkedinIcon from "~icons/mdi/linkedin";
 ---
 
 <!-- Web Awesome autoloader -->
-<script type="module" src="https://ka-f.webawesome.com/webawesome@3.9.0/webawesome.loader.js"></script>
+<script
+        type="module"
+        src="https://ka-f.webawesome.com/webawesome@3.9.0/webawesome.loader.js"
+></script>
 
 <Layout>
-	<wa-page>
-		<header class="w-screen flex items-center justify-center">
-			<Navbar/>
-		</header>
-	</wa-page>
+
+    <h1>Hi, I'm Danny Landeros</h1>
+    <p>I'm a software engineer</p>
+    <GithubIcon/>
+    <LinkedinIcon/>
+
+
 </Layout>

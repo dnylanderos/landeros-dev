@@ -1,0 +1,23 @@
+---
+const navItems = [
+  { name: "Home", href: "home" },
+  { name: "Projects", href: "projects" },
+  { name: "Work", href: "work" },
+]
+---
+
+<wa-button-group>
+  {
+    navItems.map((item) => (
+      <a href={item.href == "home" ? "/" : `${item.href}`}>
+        <wa-button appearance="filled" size="m" pill>
+          {item.name}
+        </wa-button>
+      </a>
+    ))
+  }
+</wa-button-group>
+
+<a href="mailto:dnylanderos@gmail.com">
+  <wa-button appearance="filled" size="m" pill> contact </wa-button>
+</a>

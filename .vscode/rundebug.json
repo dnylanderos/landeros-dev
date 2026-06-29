@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "configurations": [
+    {
+      "name": "Run",
+      "file": "src/pages/index.astro",
+      "mode": "run",
+      "runtime": "pnpm",
+      "id": "a3341ff8-8428-41bf-b13e-b7a8c8f1d140"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.8.8",
+  "configurations": [
+    {
+      "id": "415850c2-c1e1-4018-a9b4-756623ff1150",
+      "name": "Landeros-dev npm / Node.js",
+      "projectPath": "",
+      "workspaceFolder": "landeros-dev",
+      "env": {},
+      "closeTerminalOnExit": true,
+      "programArgs": "",
+      "vmArgs": "",
+      "port": 4321,
+      "type": "npm",
+      "typeOptions": {
+        "scriptName": "dev",
+        "packageManager": "pnpm",
+        "nodePath": "/opt/homebrew/Cellar/node/26.3.1"
+      }
+    }
+  ],
+  "groups": []
+}

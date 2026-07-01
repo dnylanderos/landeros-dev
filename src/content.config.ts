@@ -13,4 +13,14 @@ const projects = defineCollection({
     }),
 })
 
-export const collections = { projects }
+const works = defineCollection({
+  loader: glob({ base: "src/content/work", pattern: "**/*.{md,mdx}" }),
+  schema: () =>
+    z.object({
+      title: z.string(),
+      date_start: z.coerce.date(),
+      date_end: z.coerce.date(),
+    }),
+})
+
+export const collections = { projects, works }

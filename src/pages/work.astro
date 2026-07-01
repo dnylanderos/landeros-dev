@@ -1,10 +1,13 @@
 ---
 import "@awesome.me/webawesome/dist/styles/webawesome.css"
 
-/* tailwind */
-import "../styles/global.css"
+import "../styles/global.css" // tailwind
+import Base from "../layouts/Base.astro" // layout
+import { getCollection } from "astro:content" // content collection
 
-import Base from "../layouts/Base.astro"
+const allWorks = (await getCollection('works')).sort(
+  (a, b) => b.data.date_end.valueOf() - a.data.date_end.valueOf(),
+);
 ---
 
 <!-- Web Awesome autoloader -->
@@ -15,4 +18,11 @@ import Base from "../layouts/Base.astro"
 
 <Base>
   <h1>Work</h1>
+  {
+    allWorks.map((work) => (
+      <div class="job-card">
+        <h2>{work.data.title}</h2>
+      </div>
+    ))
+  }
 </Base>
